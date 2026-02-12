@@ -171,6 +171,45 @@ nav > img {
   color: #00ff88;
   border: 2px solid #00ff88;
 }
+/* About section  */
+.about {
+  max-width: 1600px;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding:80px 20px;
+}
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.about-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #afa0a0;
+  margin-bottom: 20px;
+}
+/* stats section */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  text-align: center;
+}
+.stat-box h3 {
+  color: #00ff88;
+  font-size: 36px;
+  font-weight: 700;
+}
+.stat-box p {
+  color: #ffffff;
+  font-size: 14px;
+}
 /* responsive media quary */
 @media screen and (max-width: 576px) {
   nav {
@@ -186,5 +225,8 @@ nav > img {
   }
   #new {
     left: 62%;
+  }
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
