@@ -88,6 +88,7 @@ nav > img {
   flex-direction: column;
   justify-content: center;
   align-items: center; */
+  padding: 80px 20px;
 }
 .banner-img {
   border: 4px solid green;
@@ -177,7 +178,7 @@ nav > img {
   background-color: var(--primary-color);
   color: white;
   text-align: center;
-  padding:80px 20px;
+  padding: 80px 20px;
 }
 .about-container {
   max-width: 1200px;
@@ -210,6 +211,70 @@ nav > img {
   color: #ffffff;
   font-size: 14px;
 }
+/* features section */
+.features {
+  /* background-color:rgba(10, 8, 16, 0.4); */
+  background-color: rgb(42, 15, 77);
+  padding: 80px 20px;
+  border: 2px solid red;
+}
+.feature-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* grid-template-rows: repeat(12 , 1fr); */
+  gap: 30px;
+  /* padding: 40px; */
+}
+.card-container .features-card:nth-child(1) {
+  grid-column: span 4;
+  grid-row: span 2;
+  /* border: 2px solid white; */
+}
+.card-container .features-card:nth-child(2),
+.card-container .features-card:nth-child(3),
+.card-container .features-card:nth-child(4) {
+  grid-column: span 8;
+  /* border: 2px solid white; */
+}
+.card-container .features-card:nth-child(5) {
+  grid-column: span 4;
+}
+.features-card {
+  background: #2a0f4d;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.icon img{
+  min-width: 40px;
+  min-height: 40px;
+}
+.features-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+.features-card p {
+  font-size: 16px;
+  line-height: 24px;
+  /* color: rgba(255, 255, 255, 0.363); */
+  color: #87789b;
+}
+
 /* responsive media quary */
 @media screen and (max-width: 576px) {
   nav {
@@ -228,5 +293,11 @@ nav > img {
   }
   .stats-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card-container{
+    grid-template-columns: 1fr;
+  }
+  .card-container .features-card{
+    grid-column: span 1 !important;
   }
 }
