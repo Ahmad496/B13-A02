@@ -130,7 +130,6 @@ nav > img {
   border-radius: 999px;
   padding: 8px 16px;
   display: inline-block;
-
   position: absolute;
   top: 10%;
   left: 55%;
@@ -320,8 +319,8 @@ nav > img {
   flex-direction: column;
   flex-grow: 1;
 }
-.episode-image>iframe{
-  width:100%;
+.episode-image > iframe {
+  width: 100%;
   background-size: cover;
   /* border: 2px solid red; */
   /* border-radius: 20px; */
@@ -336,7 +335,56 @@ nav > img {
 .episode-card {
   padding: 20px;
   /* border:2px solid red; */
-  box-shadow: 0,15px,35px,0,rgba(0, 0, 0, 0.4);
+  box-shadow: 0, 15px, 35px, 0, rgba(0, 0, 0, 0.4);
+}
+/* host section */
+.host-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid purple;
+}
+.host-section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+.host-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background: #250e44;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+.host-text-content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.host-text-content h3{
+  color:white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.host-text-content p{
+  color:#67577c;
+}
+.host-icon{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.host-icon img{
+  border:1px solid rgba(255,255,255,0.3);
+  border-radius:50%;
+  width: 42px; 
+  height: 42px; 
+  padding: 8px;
+  object-fit: contain;
 }
 /* responsive media quary */
 @media screen and (max-width: 576px) {
@@ -365,5 +413,9 @@ nav > img {
   }
   .episode-card-container {
     grid-template-columns: 1fr;
+  }
+  .host-content{
+    flex-direction: column;
+    margin: 20px;
   }
 }
