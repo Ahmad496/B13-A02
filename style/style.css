@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 body{
-  border: 2px dashed red;
+  /* border: 2px dashed red; */
 }
 /* common style */
 .container {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   margin: 0 auto;
 }
 #hero-bg {
@@ -24,13 +24,13 @@ body{
 /* nav section style */
 header {
   background-color: var(--primary-color);
-  border: 4px solid yellowgreen;
+  /* border: 4px solid yellowgreen; */
 }
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* background-color: var(--primary-color); */
 }
 .tech {
@@ -83,7 +83,7 @@ nav > img {
 }
 /* banner section style */
 .banner-container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   min-height: 650px;
   background: url("../assets/hero-bg.png") no-repeat center;
   background-size: cover;
@@ -94,7 +94,7 @@ nav > img {
   padding: 80px 20px;
 }
 .banner-img {
-  border: 4px solid green;
+  /* border: 4px solid green; */
   position: relative;
   width: 100%;
   min-height: 400px;
@@ -172,11 +172,11 @@ nav > img {
 .banner-btn button.banner-btn-right {
   background: transparent;
   color: #00ff88;
-  border: 2px solid #00ff88;
+  /* border: 2px solid #00ff88; */
 }
 /* About section  */
 .about {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   margin: 0 auto;
   background-color: var(--primary-color);
   color: white;
@@ -187,10 +187,11 @@ nav > img {
   max-width: 1200px;
   margin: 0 auto;
 }
-.about h2 {
+.about h1 {
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 20px;
+  /* border:2px dashed red; */
+  margin-bottom: 16px;
 }
 .about-text {
   font-size: 16px;
@@ -219,7 +220,7 @@ nav > img {
   /* background-color:rgba(10, 8, 16, 0.4); */
   background-color: rgb(42, 15, 77);
   padding: 80px 20px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .feature-container {
   max-width: 1200px;
@@ -334,18 +335,20 @@ nav > img {
 .episode-card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 .episode-card {
   padding: 20px;
   /* border:2px solid red; */
   box-shadow: 0, 15px, 35px, 0, rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
 }
 /* host section */
 .host-container {
   max-width: 1200px;
   margin: 0 auto;
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
 }
 .host-section-title {
   font-size: 36px;
@@ -395,7 +398,7 @@ nav > img {
   background: url("../assets/footer-bg.png") no-repeat center;
   background-size: cover;
   padding: 80px 20px;
-  max-width: 1600px;
+  /* max-width: 1600px; */
   margin: 0 auto;
   background-color: #1f1144;
   text-align: center;
@@ -403,10 +406,10 @@ nav > img {
 .footer-content {
   max-width: 600px;
   margin: 0 auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .footer-content h1 {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 40px;
@@ -417,24 +420,26 @@ nav > img {
   gap: 20px;
   margin-bottom: 32px;
   justify-items: center;
-   border:2px solid yellow;
+   /* border:2px solid yellow; */
 }
 .footer-img-container span {
   color: #a5a1b6;
+  font-size: 14px;
  
 }
 .copyright {
   color: #a5a1b6;
   text-align: center;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   margin-top: 32px;
+  font-size: 16px;
 }
 .img {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
-  border:2px solid red;
+  /* border:2px solid red; */
 }
 .img img {
   width: 18px;
@@ -477,6 +482,13 @@ nav > img {
     font-size:36px;
   }
   .footer-img-container {
+    width: 350px;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-left: 100px;
+    padding:0 20px;
+  }
+  .footer{
+    padding: 10px;
   }
 }
